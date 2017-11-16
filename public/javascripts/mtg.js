@@ -19,8 +19,9 @@ angular.module('cardeck', [])
     $http.delete('/removecard/' + card._id)
     .success(function(data){
       console.log("card removed!");
+      $scope.getDeck();
     });
-   $scope.getDeck();
+
   }
 
   $scope.getCards = function() {
@@ -31,14 +32,14 @@ angular.module('cardeck', [])
     $scope.deckcards = [];
     return $http.get(myurl).success(function(data){
 
-      angular.copy(data, $scope.mycards);
-
+    angular.copy(data, $scope.mycards);
     });
 }
 
   $scope.getDeck = function() {
     $scope.displayText = "This is the current deck"
       $scope.mycards = [];
+    $scope.deckcards = [];
     return $http.get('getdeck').success(function(data){
      
       angular.copy(data, $scope.deckcards);

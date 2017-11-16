@@ -47,23 +47,22 @@ router.post('/addcard', function(req, res, next) {
 });
 
 router.param('card', function(req, res, next, id) {
-  console.log("In param?");
   var query = Deck.findById(id);
   query.exec(function (err, card){
     if (err) { return next(err); }
     if (!card) { return next(new Error("can't find comment")); }
     req.card = card;
-    console.log("Got here!");
     return next();
   });
 });
 
 
 router.delete('/removecard/:card', function(req, res) {
-  console.log("Hello!");
-  console.log(req.card);
   req.card.remove();
-  console.log("Hello again!");
+  res.sendStatus(200);
+});
+router.get('/removecard/:card', function(req, res) {
+  req.card.remove();
   res.sendStatus(200);
 });
 

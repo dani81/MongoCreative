@@ -39,7 +39,6 @@ angular.module('cardeck', [])
   $scope.getDeck = function() {
     $scope.displayText = "This is the current deck"
       $scope.mycards = [];
-    $scope.deckcards = [];
     return $http.get('getdeck').success(function(data){
      
       angular.copy(data, $scope.deckcards);

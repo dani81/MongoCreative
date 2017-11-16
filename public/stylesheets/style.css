@@ -1,0 +1,18 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image:url("http://img14.deviantart.net/0eb2/i/2013/247/f/0/magic_the_gathering_mana_wallpaper_by_amphetamine_ashley-d6l0g9d.png");
+}
+
+a {
+  color: #00B7FF;
+}
+
+#images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}

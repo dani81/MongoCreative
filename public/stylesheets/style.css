@@ -1,7 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image:url("http://img14.deviantart.net/0eb2/i/2013/247/f/0/magic_the_gathering_mana_wallpaper_by_amphetamine_ashley-d6l0g9d.png");
+  background-image:url("https://magic.wizards.com/sites/mtg/files/images/featured/EN_GAMEINFO_STORY_INTRODUCTION_Header_D_140319_5.jpg");
   color: white;
 }
 
@@ -17,3 +17,19 @@ a {
   flex-wrap: wrap;
   align-items: center;
 }
+
+img {
+padding: 15px;
+}
+
+#displayTextBox{
+display:flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+Background-color: Black;
+width: 50%;
+position: relative;
+left: 25%;
+}
+

@@ -12,6 +12,8 @@ angular.module('cardeck', [])
   $scope.addCard = function(card){
    return $http.post('/addcard', card).success(function(data){
       console.log("card added");
+	  console.log(card);
+	  $scope.displayText = card.name +" added to deck!";
     });
   }
 
@@ -37,7 +39,7 @@ angular.module('cardeck', [])
 }
 
   $scope.getDeck = function() {
-    $scope.displayText = "This is the current deck"
+    $scope.displayText = "This is your current deck, click a card to remove it."
       $scope.mycards = [];
     return $http.get('getdeck').success(function(data){
      

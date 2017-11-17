@@ -14,9 +14,11 @@ Enter A Card to Find: <input type="text" ng-model="cardField" value="">
 <button type="submit">Search</button><br><br>
 </form>
 <form ng-submit="getDeck()">
-<button type="submit">Disapay Deck</button><br><br>
+<button type="submit">Display Deck</button><br><br>
 </form>
+<div id="displayTextBox">
 {{displayText}}
+</div>
 
 <span id="images">
   <div ng-repeat="card in mycards.cards">

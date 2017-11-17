@@ -26,7 +26,7 @@
     <img src="{{card.imageUrl}}" ng-click="addCard(card)">
   </div>
   <div ng-repeat="card in deckcards | orderBy:['cmc','name']">
-    <img src="{{card.imageUrl}}" ng-click="removeCard(card)">
+    <img id="deckCard" src="{{card.imageUrl}}" ng-click="removeCard(card)">
   </div>
 </span>
 

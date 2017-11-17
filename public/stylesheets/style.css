@@ -6,9 +6,9 @@ body {
 }
 
 h1{
-  text-shadow: 2px 2px 4px #000000;
-    font-size: 3em;
-    font-family: sans-serif;
+  text-shadow: 3px 3px 6px #000000;
+  font-size: 3em;
+  font-family: sans-serif;
 }
 
 #displayDeck {
@@ -17,31 +17,31 @@ h1{
 
 .button {
   box-shadow: 8px 8px 4px #212115;
-    cursor: pointer;
-    background-color: rgba(12, 88, 114, 0.62);
-    border: 2px solid rgba(6, 76, 101, 0.66);
-    color: white;
-    padding: 10px 18px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    border-radius: 15px;
+  cursor: pointer;
+  background-color: rgba(12, 88, 114, 0.62);
+  color: white;
+  padding: 10px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  border-radius: 15px;
 }
 
 .button:hover {
   background-color: rgb(12, 88, 114);
-border: 2px solid #42b2da;
+  border: 2px solid #42b2da;
 }
 
 input {
-padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  padding: 12px 20px;
+  margin: 0px 8;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 4px #212115;
 }
 
 a {
@@ -58,12 +58,12 @@ a {
 }
 
 img {
-    padding: 0px;
-    box-shadow: 15px 20px 16px #111108;
-    margin: 15px;
-    opacity: 0.85;
-    cursor: pointer;
-transition: 0.3s ease;
+  padding: 0px;
+  box-shadow: 15px 20px 16px #111108;
+  margin: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  opacity: .95;
 }
 
 img:hover {
@@ -72,10 +72,11 @@ img:hover {
 }
 
 #displayTextBox{
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 4px 4px 8px #000000;
   font-size: 30px;
   width: 50%;
   position: relative;
   left: 25%;
+  padding: 15px;
 }
 

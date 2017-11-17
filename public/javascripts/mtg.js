@@ -5,7 +5,6 @@ angular.module('cardeck', [])
 
   $scope.mycards = [];
   $scope.deckcards = [];
-  
   $scope.cardField = '';
   $scope.displayText = '';
 

@@ -10,8 +10,6 @@ angular.module('cardeck', [])
 
   $scope.addCard = function(card){
    return $http.post('/addcard', card).success(function(data){
-      console.log("card added");
-	  console.log(card);
 	  $scope.displayText = card.name +" added to deck!";
     });
   }
@@ -19,8 +17,10 @@ angular.module('cardeck', [])
   $scope.removeCard = function(card){
     $http.delete('/removecard/' + card._id)
     .success(function(data){
-      console.log("card removed!");
+
       $scope.getDeck();
+      $scope.displayText = card.name + " removed from deck!";
+
     });
 
   }

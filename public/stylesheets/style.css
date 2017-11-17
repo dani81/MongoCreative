@@ -1,7 +1,9 @@
 body {
   padding: 25px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image:url("https://magic.wizards.com/sites/mtg/files/images/featured/EN_GAMEINFO_STORY_INTRODUCTION_Header_D_140319_5.jpg");
+  background-image:url("Planeswalkers.jpg");
+  background-size:cover;
+  background-attachment:fixed;
   color: white;
 }
 
@@ -78,5 +80,16 @@ img:hover {
   position: relative;
   left: 25%;
   padding: 15px;
+  opacity:1;
+
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  opacity: .6;  
+}
